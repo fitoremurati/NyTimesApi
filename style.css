@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: large;
+  text-align: center;
+}
+.main-logo {
+  position: absolute;
+  top: 10px;
+  left: 80%;
+}
+.logo {
+  margin-top: 20px;
+}
+hr {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.search-bar {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+select {
+  border: none;
+}
+
+input {
+  padding: 6px;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  margin: 10px;
+  padding-top: 20px;
+  text-align: left;
+  flex: 1;
+}
+.card img {
+  height: 250px;
+  padding-right: 20px;
+}
+.noimage {
+  flex: auto;
+  width: 30%;
+}
+
+h3 {
+  font-family: "Karma", serif;
+  line-height: 1;
+  padding-top: 10px;
+}
+.card h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: inline;
+}
+.card p {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  padding: 8px 40px;
+  margin-top: 10px;
+  border: none;
+}
+
+@media (max-width: 540px) {
+  .search-bar {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+  .main-logo {
+    position: absolute;
+    top: 5px;
+    left: 83%;
+  }
+}
+@media (max-width: 414px) {
+  .card {
+    flex-direction: column;
+  }
+  .card img {
+    height: 200px;
+  }
+  .logo {
+    width: 60%;
+  }
+}
