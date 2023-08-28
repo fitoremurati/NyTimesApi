@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>NY Times Best Sellers</title>
+</head>
+<body>
+  <a href="https://developer.nytimes.com" target="_blank"><img src="./assets/images/nytimes.png" alt="" class="main-logo"></a>
+  <img src="./assets/images/Logo.png" alt="" class="logo">
+  <hr>
+  <h4>Best Sellers</h4>
+  <hr>
+  <hr>
+  <div class="search-bar">
+    <div>
+      <p>
+         Best sellers
+      </p>
+      <select name="books" id="book-year">
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select>
+      <select name="books" id="book-month">
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      <select name="books" id="book-category">
+        <option value="combined-print-and-e-book-fiction">Fiction</option>
+        <option value="combined-print-and-e-book-nonfiction">Nonfiction</option>
+        <option value="business-books">Business</option>
+        <option value="family">Family</option>
+      </select>
+      <button id="search-btn">Search</button>
+    </div>
+    <div>
+      <p>
+        Search book by
+      </p>
+      <input type="text" placeholder="title" id="search-book-title-input" />
+      or
+      <input type="text" placeholder="author" id="search-book-author-input" />
+      <button id="search-by-name-btn">Search</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./Books.js"></script>
+</body>
+</html>
